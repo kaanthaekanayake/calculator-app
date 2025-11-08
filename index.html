@@ -13,18 +13,18 @@
     <div class="calculator">
         <h2>Calculator</h2>
 
-        <input type="number" class="input-field" placeholder="Enter numbers">
+        <input type="text" id="input-value" class="input-field" placeholder="Enter number">
 
         <div class="output">
             <label>Output</label>
-            <input type="text" readonly>
+            <input type="text" id="output-value" readonly>
         </div>
 
         <div class="buttons">
-            <button>+</button>
-            <button>-</button>
-            <button>/</button>
-            <button>*</button>
+            <button onclick="operation('+')">+</button>
+            <button onclick="operation('-')">-</button>
+            <button onclick="operation('/')">/</button>
+            <button onclick="operation('*')">*</button>
         </div>
 
         <button class="equal-btn">=</button>
